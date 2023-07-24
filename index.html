@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: "#707070",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="max-w-7xl mx-auto w-4/5 space-y-6">
+      <nav class="navbar bg-base-100">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 flex items-start"
+          >
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Home</a>
+            </li>
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Services</a>
+              <i class="fa-solid fa-greater-than p-0 text-main w-max"></i>
+            </li>
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Cases</a>
+              <i class="fa-solid fa-greater-than p-0 text-main w-max"></i>
+            </li>
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Blog</a>
+              <i class="fa-solid fa-greater-than p-0 text-main w-max"></i>
+            </li>
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Contact US</a>
+              <i class="fa-solid fa-greater-than p-0 text-main w-max"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-start">
+          <img
+            class="w-[35px] md:w-[40px] lg:w-[50px]"
+            src="./images/business.png"
+            alt=""
+          />
+          <a
+            class="btn btn-ghost normal-case text-xl md:text-2xl lg:text-4xl font-EB"
+            >Justice</a
+          >
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 flex gap-4">
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Home</a>
+            </li>
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Services</a>
+              <i class="fa-solid fa-greater-than p-0 text-main w-max"></i>
+            </li>
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Cases</a>
+              <i class="fa-solid fa-greater-than p-0 text-main w-max"></i>
+            </li>
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Blog</a>
+              <i class="fa-solid fa-greater-than p-0 text-main w-max"></i>
+            </li>
+            <li class="flex flex-row justify-center items-center gap-2">
+              <a class="text-main w-max p-0">Contact US</a>
+              <i class="fa-solid fa-greater-than p-0 text-main w-max"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-end">
+          <a
+            class="btn text-white bg-[#B68C5A] w-3/4 md:w-3/5 lg:w-3/4 text-[10px] md:text-[12px]"
+            >Free Consultation</a
+          >
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="">
+        <div
+          class="hero h-[80vh]"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1
+                class="mb-5 text-3xl md:text-4xl lg:text-5xl font-bold font-EB"
+              >
+                We Provide Effective Legal Solutions
+              </h1>
+              <p class="mb-5 text-main text-sm md:text-base">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="flex gap-6 justify-center">
+                <input
+                  type="text"
+                  placeholder="Search your services"
+                  class="input input-bordered w-3/5 max-w-xs text-sm md:text-base p-2"
+                />
+                <button
+                  class="btn text-white bg-[#B68C5A] border-none px-6 w-1/5 p-1 md:p-3"
+                >
+                  <p class="text-[2.5vw] md:text-base">Search</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
+</html>
