@@ -8,3 +8,8 @@
 .font-poppins {
   font-family: "Poppins", sans-serif;
 }
+
+.client-1 {
+  background-image: url(images/banner.png);
+  background-size: cover;
+}
